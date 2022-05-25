@@ -1,5 +1,3 @@
-IP Hunter
-
 Hunt public IP 113.211 in Huawei Modem
 
 *requirement - Huawei Modem must have AIO installed
