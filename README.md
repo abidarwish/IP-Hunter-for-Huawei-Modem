@@ -4,7 +4,7 @@
 
 Hunt public IP 113.211
 
-<I>*requirement - Huawei Modem must have AIO installed</I>
+<I>*requirement - Huawei Modem with AIO installed</I>
 
 Follow these steps:
 
