@@ -12,7 +12,7 @@ Follow these steps:
 
 2. Open the app and login to root@192.168.8.1 port 22
 
-3. Copy/paste this command :
+3. Copy this command and paste it in the console app :
 
 ```
 rm -rf iphunter && wget -q https://raw.githubusercontent.com/abidarwish/IP-Hunter-for-Huawei-Modem/main/iphunter && bash iphunter
