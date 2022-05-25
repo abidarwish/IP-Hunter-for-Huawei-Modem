@@ -2,37 +2,36 @@
 #script by Abi Darwish
 
 clear
-echo -e " \033[1;32mIP Hunter v2.1\033[0m \033[1mby Abi Darwish\033[0m"
+echo " IP Hunter v2.1 by Abi Darwish"
 echo
 read -p "Have you turned off all VPNs? [y/n]: " VPNOFF
 if [[ $VPNOFF == "y" ]]; then
     clear
-    echo -e " \033[1;32mIP Hunter v2.1\033[0m \033[1mby Abi Darwish\033[0m"
+    echo " IP Hunter v2.1 by Abi Darwish"
     echo
     until [[ $(curl -s ipv4.icanhazip.com | cut -d. -f1,2) == "113.211" ]]; do
     if [[ $(curl -s ipv4.icanhazip.com | cut -d. -f1,2) == "113.211" ]]; then
         clear
-        echo -e " \033[1;32mIP Hunter v2.1\033[0m \033[1mby Abi Darwish\033[0m"
+        echo " IP Hunter v2.1 by Abi Darwish"
         echo
-        echo -e "\033[32mSuccessfully connected to ${publicIP}\033[0m"
+        echo "Successfully connected to ${publicIP}"
         echo "You can turn on VPN now"
         exit 0
     fi
-    printf "%-2s" "Start hunting..."
+    echo "Start hunting..."
     sleep 1
     publicIP=$(curl -s ipv4.icanhazip.com)
-    printf "\n%-2s" "Got ${publicIP}"
+    echo "Got ${publicIP}"
     sleep 1
     curl -s -o /dev/null http://192.168.8.1:8989/cgi-bin/changeip.cgi
     if [[ $? != 0 ]]; then
         echo
-        echo -e "\e[1;31mError: your modem doesn't have AIO installed\e[0m"
+        echo "Error: your modem doesn't have AIO installed"
         echo
         exit 0
     fi
-    printf "\n%-2s" "Hunting again in 15 seconds (press Ctrl+C to cancel)..."
+    echo "Hunting again in 15 seconds (press Ctrl+C to cancel)..."
     sleep 15
-    echo
     echo
     done
 else
