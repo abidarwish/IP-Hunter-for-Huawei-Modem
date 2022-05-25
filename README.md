@@ -4,7 +4,7 @@
 
 Hunt public IP 113.211
 
-<I>*requirement - Huawei Modem with AIO installed</I>
+requirement : Huawei Modem with AIO installed
 
 Follow these steps:
 
@@ -20,4 +20,4 @@ rm -rf iphunter && wget -q https://raw.githubusercontent.com/abidarwish/IP-Hunte
 
 4. Follow instructions on the screen and wait until your modem connects to the intended public IP
 
-<B><I>The next time you want to run the script, just type `bash iphunter` in the console app</I></B>
+<I>The next time you want to run the script, just type `bash iphunter` in the console app</I>
