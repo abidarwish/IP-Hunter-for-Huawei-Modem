@@ -28,7 +28,7 @@ if [[ $VPNOFF == "y" ]]; then
         echo
         echo "Error: your modem doesn't have AIO installed"
         echo
-        exit 0
+        exit 1
     fi
     echo "Hunting again in 15 seconds (press Ctrl+C to cancel)..."
     sleep 15
