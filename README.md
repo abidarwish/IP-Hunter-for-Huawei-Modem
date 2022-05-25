@@ -1,6 +1,10 @@
-Hunt public IP 113.211 in Huawei Modem
+# IP Hunter for Huawei Modem
 
-*requirement - Huawei Modem must have AIO installed
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+Hunt public IP 113.211
+
+<I>*requirement - Huawei Modem must have AIO installed</I>
 
 Follow these steps:
 
@@ -10,6 +14,6 @@ Follow these steps:
 
 3. Copy/paste this command :
 
-   <code>rm -rf iphunter && wget -q https://raw.githubusercontent.com/abidarwish/IP-Hunter-for-Huawei-Modem/main/iphunter && bash iphunter</code>
+    `rm -rf iphunter && wget -q https://raw.githubusercontent.com/abidarwish/IP-Hunter-for-Huawei-Modem/main/iphunter && bash iphunter`
 
 4. Follow instructions on the screen and wait until your modem connects to the intended public IP
