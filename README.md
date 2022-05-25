@@ -8,7 +8,7 @@ Hunt public IP 113.211
 
 Follow these steps:
 
-1. Download terminal app like Shelly for iOS, Putty SSH for Android or Putty for PC.
+1. Download console app like Shelly for iOS, Putty SSH for Android or Putty for PC.
 
 2. Open the app and login to root@192.168.8.1 port 22
 
@@ -17,3 +17,5 @@ Follow these steps:
     `rm -rf iphunter && wget -q https://raw.githubusercontent.com/abidarwish/IP-Hunter-for-Huawei-Modem/main/iphunter && bash iphunter`
 
 4. Follow instructions on the screen and wait until your modem connects to the intended public IP
+
+<B><I>The next time you want to run the script, just type `bash iphunter` in the console app</I></B>
