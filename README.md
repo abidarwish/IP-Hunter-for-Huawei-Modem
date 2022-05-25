@@ -12,7 +12,6 @@ Follow these steps:
 
 3. Copy/paste this command :
 
-"rm -rf iphunter && wget -q https://raw.githubusercontent.com/abidarwish/IP-Hunter-for-Huawei-Modem
-/main/iphunter && bash iphunter"
+   rm -rf iphunter && wget -q https://raw.githubusercontent.com/abidarwish/IP-Hunter-for-Huawei-Modem/main/iphunter && bash iphunter
 
 4. Follow instructions on the screen and wait until your modem connects to the intended public IP
