@@ -15,7 +15,7 @@ Follow these steps:
 3. Copy this command and paste it in the console app :
 
 ```
-rm -rf iphunter && wget -q https://raw.githubusercontent.com/abidarwish/IP-Hunter-for-Huawei-Modem/main/iphunter && bash iphunter
+rm -rf iphunter && busybox wget -q https://raw.githubusercontent.com/abidarwish/IP-Hunter-for-Huawei-Modem/main/iphunter && bash iphunter
 ```
 
 4. Follow instructions on the screen and wait until your modem connects to the intended public IP
