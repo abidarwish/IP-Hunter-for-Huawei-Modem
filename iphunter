@@ -1,6 +1,8 @@
 #!/bin/bash
 #script by Abi Darwish
 
+HUNT_IP=$(busybox wget -q -O /online/index.html ipv4.icanhazip.com && cat /online/index.html | busybox cut -d. -f1,2)
+
 clear
 echo " IP Hunter v2.1 by Abi Darwish"
 echo
@@ -9,8 +11,8 @@ if [[ $VPNOFF == "y" ]]; then
     clear
     echo " IP Hunter v2.1 by Abi Darwish"
     echo
-    until [[ $(curl -s ipv4.icanhazip.com | cut -d. -f1,2) == "113.211" ]]; do
-    if [[ $(curl -s ipv4.icanhazip.com | cut -d. -f1,2) == "113.211" ]]; then
+    while true; do
+    if [[ ${HUNT_IP} == "113.211" ]]; then
         clear
         echo " IP Hunter v2.1 by Abi Darwish"
         echo
@@ -20,10 +22,10 @@ if [[ $VPNOFF == "y" ]]; then
     fi
     echo "Start hunting..."
     sleep 1
-    publicIP=$(curl -s ipv4.icanhazip.com)
+    publicIP=$(busybox wget -q -O /online/index.html ipv4.icanhazip.com && cat /online/index.html)
     echo "Got ${publicIP}"
     sleep 1
-    curl -s -o /dev/null http://192.168.8.1:8989/cgi-bin/changeip.cgi
+    busybox wget -q -O /dev/null http://192.168.8.1:8989/cgi-bin/changeip.cgi
     if [[ $? != 0 ]]; then
         echo
         echo "Error: your modem doesn't have AIO installed"
